@@ -21,9 +21,9 @@
   "instanceNameFormat": "Exports Solutions Using Config",
   "inputs": [
     {
-      "name": "crmConnectionString",
+      "name": "ConnectionString",
       "type": "string",
-      "label": "Connection String",
+      "label": "ConnectionString",
       "defaultValue": "",
       "required": true,
       "helpMarkDown": "More information on [format](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/xrm-tooling/use-connection-strings-xrm-tooling-connect#connection-string-parameters)"
