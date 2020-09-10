@@ -29,7 +29,7 @@ $xrmCIToolkit = $scriptPath + "\Xrm.Framework.CI.PowerShell.Cmdlets.dll"
 Write-Verbose "Importing CIToolkit: $xrmCIToolkit" 
 Import-Module $xrmCIToolkit
 Write-Verbose "Imported CIToolkit"
-
+$ConfigFilePath = "https://github.com/ravikatrenikona/dyn365-ce-vsts-tasks/blob/master/BuildTools/Xrm.CI.Framework.BuildTools/Lib/xRMCIFramework/9.0.0/task.json"
 #Solution Export
 
 Write-Host "Exporting Solutions"
