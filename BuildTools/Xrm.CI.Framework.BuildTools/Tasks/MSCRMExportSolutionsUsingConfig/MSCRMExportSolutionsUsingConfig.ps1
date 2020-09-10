@@ -24,7 +24,7 @@ if (-not $mscrmToolsPath)
 #Import
 try
 {
-	& "$mscrmToolsPath\xRMCIFramework\9.0.0\ExportSolutionsUsingConfig.ps1" -configFilePath "$configFilePath" -crmConnectionString "$CrmConnectionString" -OutputFolder "$outputPath" -Timeout $crmConnectionTimeout
+	& "$mscrmToolsPath\xRMCIFramework\9.0.0\ExportSolutionsUsingConfig.ps1" -configFilePath "$configFilePath" -ConnectionString "$ConnectionString" -OutputFolder "$outputPath" -Timeout $crmConnectionTimeout
 }
 catch
 {
