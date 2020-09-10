@@ -3,7 +3,7 @@
 #
 
 param(
-[string]$CrmConnectionString,
+[string]$ConnectionString,
 [string]$OutputFolder,
 [string]$ConfigFilePath,
 [int]$Timeout
@@ -15,7 +15,7 @@ $InformationPreference = "Continue"
 Write-Verbose 'Entering ExportSolutionsUsingConfig.ps1'
 
 #Parameters
-Write-Verbose "CrmConnectionString = $CrmConnectionString"
+Write-Verbose "ConnectionString = $ConnectionString"
 Write-Verbose "OutputFolder = $OutputFolder"
 Write-Verbose "ConfigFilePath = $ConfigFilePath"
 Write-Verbose "Timeout = $Timeout"
@@ -34,7 +34,7 @@ $ConfigFilePath = "https://github.com/ravikatrenikona/dyn365-ce-vsts-tasks/blob/
 
 Write-Host "Exporting Solutions"
         
-$exportedFiles = Export-XrmSolutions -ConnectionString "$CrmConnectionString" -ConfigFilePath "$ConfigFilePath" -OutputFolder "$OutputFolder" -Timeout $Timeout
+$exportedFiles = Export-XrmSolutions -ConnectionString "$ConnectionString" -ConfigFilePath "$ConfigFilePath" -OutputFolder "$OutputFolder" -Timeout $Timeout
     
 Write-Host "Managed Solution Exported $exportedFiles"
 
