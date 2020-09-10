@@ -2,7 +2,7 @@
   "Solutions": [
     {
       "SolutionName": "VeriLoanBase",
-      "Managed": true,
+      "Managed": false,
       "TargetVersion": null,
       "ExportAutoNumberingSettings": false,
       "ExportCalendarSettings": false,
